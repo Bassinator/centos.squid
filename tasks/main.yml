@@ -26,7 +26,7 @@
 
 - name: Set max filesize to cache
   lineinfile:
-    path: /etc/squid/squid.config
+    path: /etc/squid/squid.conf
     inserbefore: '^cache_dir ufs /vagrant/squid 100 16 256'
     line: maximum_object_size 100 MB
 
